@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function randomWeapon(){
+        let weapon = "";
+        weaponID = Math.ceil((Math.random()*3));
+        if (weaponID == 1) weapon = "rock";
+        if (weaponID == 2) weapon = "paper";
+        if (weaponID == 3) weapon = "scissors";
+        return weapon;
+    }
+    
+    computerRound = randomWeapon();
+    playerRound = prompt("Input a weapon: rock, paper or scissors", "paper");
+    playerRound = playerRound.toLowerCase();
+
+    console.log("cr: ", computerRound);
+    console.log("pr: ", playerRound);
+    
+    
+    </script>
+</body>
+</html>
