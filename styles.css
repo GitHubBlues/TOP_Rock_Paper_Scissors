@@ -1,0 +1,77 @@
+body{
+    display: flex;
+    flex-direction: column;
+    width: 95vw;
+    max-width: 1000px;
+    height: 95vw;
+    margin: 3vw auto;
+    background-color: #adadad;
+    font-family: sans-serif;
+    /* border: 1em solid black; */
+}
+
+.title{
+    /* border: 2em solid blue; */
+    margin: 5vw auto 2vw auto;
+    text-align: center;
+    color: #2E1114;
+    font-size: 2rem;
+}
+
+p{
+    /* border: 1em solid yellow; */
+    margin: 0 auto 10vw auto;
+    text-align: center;
+    font-size: 1rem;
+    color: #2E1114;
+}
+
+.btn-computer,
+.btn-player{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* border: 1em solid red; */
+    
+
+    
+}
+
+.btn-player button,
+.btn-computer button{
+    background-color: #83677B;  
+    margin: 1vw 1.5vw; 
+    border: 0.3vw solid ;
+    font-size: 1.3rem;
+    color: #501B1D;
+}
+
+.player-id{
+    width: 5vw;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin: 1vw 1.5vw; 
+    border: 1vw solid #adadad;;
+
+}
+
+.result{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin: 2vw;
+}
+
+#intermediate,
+#running-score,
+#play-again{
+    font-size: large;
+    margin: 5px auto;
+}
+
+#final{
+    font-size: xx-large;
+    margin: 16px auto;
+
+}

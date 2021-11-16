@@ -4,19 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">    
     <title>Document</title>
 </head>
 <body>
+    <div class="title">Free <strong>Rock - Paper - Scissors</strong> game</div>
+    <p>Play 5 rounds for finding out who the winner is! </p>
     <div class="btn-player">
-        <button type="button", data-weapon="rock">Rock</button>
-        <button type="button", data-weapon="paper">Paper</button>
-        <button type="button", data-weapon="scissors">Scissors</button>
+        <div class="player-id">YOU</div>
+        <div>
+            <button type="button", data-weapon="rock">Rock</button>
+            <button type="button", data-weapon="paper">Paper</button>
+            <button type="button", data-weapon="scissors">Scissors</button>
+        </div>
     </div>
 
     <div class="btn-computer">
-        <button type="button", data-weapon="rock">Rock</button>
-        <button type="button", data-weapon="paper">Paper</button>
-        <button type="button", data-weapon="scissors">Scissors</button>
+        <div class="player-id">Robot</div>
+        <div>
+            <button type="button", data-weapon="rock">Rock</button>
+            <button type="button", data-weapon="paper">Paper</button>
+            <button type="button", data-weapon="scissors">Scissors</button>
+        </div>
     </div>
 
     <div class="result">
@@ -92,7 +101,7 @@
         }    
         if (scoreComputer==5){
             displayResultf.textContent = 'You lost :('; 
-            playAgain.textContent = 'Click to play again';
+            playAgain.textContent = 'Wanna plaz again? Click on weapon!';
             scorePlayer = 0;
             scoreComputer = 0; 
             return;
