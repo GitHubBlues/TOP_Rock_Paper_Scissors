@@ -92,5 +92,10 @@ function play(e){
 
 let scorePlayer = 0;
 let scoreComputer = 0;    
-const playerWeapon = document.querySelector('.btn-player');
-playerWeapon.addEventListener('click', play);
+const playerWeapons = document.querySelector('.btn-player');
+const playerWeapon1 = playerWeapons.querySelector('[data-weapon="rock"]')
+const playerWeapon2 = playerWeapons.querySelector('[data-weapon="paper"]')
+const playerWeapon3 = playerWeapons.querySelector('[data-weapon="scissors"]')
+playerWeapon1.addEventListener('click', play);
+playerWeapon2.addEventListener('click', play);
+playerWeapon3.addEventListener('click', play);
