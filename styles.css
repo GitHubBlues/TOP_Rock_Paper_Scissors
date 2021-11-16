@@ -40,10 +40,23 @@ p{
 .btn-player button,
 .btn-computer button{
     background-color: #83677B;  
-    margin: 1vw 1.5vw; 
-    border: 0.3vw solid ;
+    margin: 1vw 1.5vw;  */
+    margin:0;
+    border: 0.3vw solid;
     font-size: 1.3rem;
     color: #501B1D;
+    transition: all .07s ease;
+}
+
+.btn-computer button{
+    opacity: 0.5;
+}
+
+#highlighted{
+    background: #64485C;
+    border: 0.2vw solid yellow;
+    color: #adadad;
+    transform: scale(1.2);
 }
 
 .player-id{
