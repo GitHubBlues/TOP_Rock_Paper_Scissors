@@ -1,23 +1,23 @@
 body {
     display: flex;
     flex-direction: column;
-    width: 95vw;
-    max-width: 1000px;
-    height: 95vw;
-    margin: 3vw auto;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
     background-color: #adadad;
     font-family: sans-serif;
+    box-sizing: border-box;
 }
 
 .title {
-    margin: 5vw auto 2vw auto;
+    margin: 30px auto 20px auto;
     text-align: center;
     color: #2e1114;
     font-size: 2rem;
 }
 
 p {
-    margin: 0 auto 10vw auto;
+    margin: 0 auto 45px auto;
     text-align: center;
     font-size: 1rem;
     color: #2e1114;
