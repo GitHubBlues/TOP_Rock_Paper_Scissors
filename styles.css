@@ -1,4 +1,4 @@
-body{
+body {
     display: flex;
     flex-direction: column;
     width: 95vw;
@@ -7,84 +7,79 @@ body{
     margin: 3vw auto;
     background-color: #adadad;
     font-family: sans-serif;
-    /* border: 1em solid black; */
 }
 
-.title{
-    /* border: 2em solid blue; */
+.title {
     margin: 5vw auto 2vw auto;
     text-align: center;
-    color: #2E1114;
+    color: #2e1114;
     font-size: 2rem;
 }
 
-p{
-    /* border: 1em solid yellow; */
+p {
     margin: 0 auto 10vw auto;
     text-align: center;
     font-size: 1rem;
-    color: #2E1114;
+    color: #2e1114;
 }
 
 .btn-computer,
-.btn-player{
+.btn-player {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /* border: 1em solid red; */
-    
-
-    
 }
 
-.btn-player button,
-.btn-computer button{
-    background-color: #83677B;  
-    margin: 1vw 1.5vw;  */
-    margin:0;
-    border: 0.3vw solid;
-    font-size: 1.3rem;
-    color: #501B1D;
-    transition: all .07s ease;
-}
-
-.btn-computer button{
+.btn-computer img {
     opacity: 0.5;
 }
 
-#highlighted{
-    background: #64485C;
+#highlighted {
+    background: #64485c;
     border: 0.2vw solid yellow;
     color: #adadad;
-    transform: scale(1.2);
-}
-
-.player-id{
-    width: 5vw;
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.3rem;
-    margin: 1vw 1.5vw; 
-    border: 1vw solid #adadad;;
-
-}
-
-.result{
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    margin: 2vw;
+    transform: scale(1.1);
 }
 
 #intermediate,
 #running-score,
-#play-again{
+#play-again {
     font-size: large;
     margin: 5px auto;
 }
 
-#final{
+#final {
     font-size: xx-large;
     margin: 16px auto;
+}
 
+img {
+    width: 6rem;
+    height: 6rem;
+    border: 0.5px solid grey;
+    margin-left: 15px;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+.btn-player {
+    flex: display;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.player-id {
+    font-weight: bold;
+    font-size: 1.3rem;
+    width: 130px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
 }

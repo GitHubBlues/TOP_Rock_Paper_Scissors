@@ -3,7 +3,7 @@ const displayResultf = document.querySelector('#final');
 const runningScore = document.querySelector('#running-score');
 const playAgain = document.querySelector('#play-again');
 let highlightWeapon = document.querySelectorAll('[data-weapon="rock"]');
-const allWeaponButtons = document.querySelectorAll('button');
+const allWeaponButtons = document.querySelectorAll('img');
 const allWButtonsArray = Array.prototype.slice.call(allWeaponButtons);
 
 function randomWeapon(){
@@ -46,7 +46,6 @@ function rules(playerRound, computerRound){
 function clickedWeapon(e) {
     const selectedWeapon = e.target.getAttribute('data-weapon'); 
     e.srcElement.setAttribute('id', 'highlighted');
-    //console.log(selectedWeapon);
     return selectedWeapon;
     
 } 
